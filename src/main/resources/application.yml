@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: ''
+    #        url: 'jdbc:h2:mem:testdb # In-Memory mode'
+    username: sa
+    hikari:
+      jdbc-url: 'jdbc:h2:mem:testdb'
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:templates/thymeleaf/
+    suffix: .html
+    mode: HTML
+    cache: false
+  web:
+    resources:
+      static-locations: classpath:static
+  main:
+    allow-bean-definition-overriding: true
+elasticsearch:
+  host: localhost
+  port: 9200
+#  sql:
+#    init:
+#      mode: always
+#      data-locations: classpath:data.sql

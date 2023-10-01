@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layouts/layout}">
+<th:block layout:fragment="content">
+  <!-- Begin Page Content -->
+  <div class="container p-5 text-center border">
+    <h2>자기소개서 검색</h2>
+    <p></p>
+  </div>
+  <div class="container border">
+    <div class="d-flex align-items-center h-50 border">
+      <br>
+      <form class="d-flex">
+        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
+        <button class="btn btn-primary" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <br>
+    </div>
+  </div>
+  <div class="container border flex-column gap-4">
+    <div class="card">
+      <h5 class="card-header">세계의별</h5>
+      <div class="card-body">
+        <p class="card-text">2023 상반기 공개채용</p>
+      </div>
+      <div class="card-body border">
+        <h5 class="card-title"><b>지원 직무와 회사에 대한 지원동기를 기술하시오.</b></h5>
+        <p class="card-text text-end">(70/500)자</p>
+      </div>
+      <div class="card-body border">
+
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-warning" type="button">회사명 수정</button>
+        <button class="btn btn-warning" type="button">질문 수정</button>
+        <button class="btn btn-warning" type="button">답 수정</button>
+        <button class="btn btn-danger" type="button">삭제</button>
+      </div>
+    </div>
+    <div class="card">
+      <h5 class="card-header">XX은행</h5>
+      <div class="card-body">
+        <p class="card-text">2023 상반기 신입행원 채용</p>
+      </div>
+      <div class="card-body border">
+        <h5 class="card-title"><b>XX은행 SW개발 부문에 지원한 동기와 입행 후 포부를 기술해 주십시오</b></h5>
+        <p class="card-text text-end">(70/700)자</p>
+      </div>
+      <div class="card-body border">
+
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-warning" type="button">회사명 수정</button>
+        <button class="btn btn-warning" type="button">질문 수정</button>
+        <button class="btn btn-warning" type="button">답 수정</button>
+        <button class="btn btn-danger" type="button">삭제</button>
+      </div>
+    </div>
+
+  </div>
+</th:block>
+</html>

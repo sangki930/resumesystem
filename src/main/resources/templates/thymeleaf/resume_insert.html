@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layouts/layout}">
+<th:block layout:fragment="content">
+  <!-- Begin Page Content -->
+  <div class="container p-5 text-center border">
+    <h2>자기소개서 질문 및 답변 추가</h2>
+    <p>XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+  </div>
+  <div class="container p-5 border">
+    <div class="mb-3">
+      <label for="company_name" class="form-label">회사명</label>
+      <input type="text" class="form-control" id="company_name" placeholder="기업에서 물어보는 자기소개서 질문을 작성하시오.">
+    </div>
+    <div class="mb-3">
+      <label for="resume_question" class="form-label">자기소개서 질문</label>
+      <input type="text" class="form-control" id="resume_question" placeholder="기업에서 물어보는 자기소개서 질문을 작성하시오.">
+    </div>
+    <div class="mb-3">
+      <label for="resume_answer" class="form-label">자기소개서의 질문에 대한 답</label>
+      <textarea class="form-control" id="resume_answer" rows="3"></textarea>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<!--      <button class="btn btn-primary me-md-2" type="button">Button</button>-->
+      <button class="btn btn-success" type="button">추가</button>
+    </div>
+  </div>
+<!--  <div class="container">-->
+<!--    <button type="button" class="btn btn-success">추가</button>-->
+<!--  </div>-->
+</th:block>
+</html>
